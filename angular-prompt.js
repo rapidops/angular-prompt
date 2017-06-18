@@ -30,7 +30,7 @@ angular.module('cgPrompt').factory('prompt',['$modal','$q',function($modal,$q){
         var defer = $q.defer();
 
         $modal.open({
-            templateUrl:'angular-prompt.html',
+            templateUrl:require('./angular-prompt.html'),
             controller: 'cgPromptCtrl',
             resolve: {
                 options:function(){ 
